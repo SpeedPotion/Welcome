@@ -3,15 +3,15 @@ package me.SpeedPotion.application;
 import org.bukkit.plugin.java.JavaPlugin;
 import java.util.ArrayList;
 
-public class Main extends JavaPlugin {
+public class Application extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        super.onEnable();
         getExperience();
         for(Why why : Why.values()){
             getReasons(why);
         }
+        super.onEnable();
     }
 
     @Override
@@ -34,8 +34,8 @@ public class Main extends JavaPlugin {
         experience.add("Fluent with Spigot/Bukkit API");
         experience.add("Capable of using Maven & learn whats needed for the job");
         experience.add("Able to have voice calls quite often");
-        experience.add("Learning in Udemy basic AI development");
-        experience.add("I can speak Spanish, English & Portuguese");
+        experience.add("Learning basic AI development on Udemy");
+        experience.add("I'm able to speak Spanish, English & Portuguese");
 
         return experience;
     }
@@ -54,9 +54,9 @@ public class Main extends JavaPlugin {
      * I know how to use enums :p
      */
     public enum Why {
-        SIMPLE("I thrive to make a simple code so my fellow teammates can understand and expose vulnerabilities easily"),
-        EFFICIENT("Before finishing the project I read all the code and make sure it is efficient"),
-        CLEAN("Having a clean code will make me and my teammates organise better our workflow.");
+        SIMPLE("I thrive to create simple code so my fellow team mates can understand and expose vulnerabilities easily"),
+        EFFICIENT("Before finishing the project, I proofread it and make sure it is efficient"),
+        CLEAN("Having clean code will make my team mates and I improve our workflow");
 
         String answer;
 
@@ -68,10 +68,12 @@ public class Main extends JavaPlugin {
             return answer;
         }
     }
+
     /**
      * My objective with this type of application was to show I know how to code, and some basic concepts everyone should know.
-     * I'm honest so there is another side of the coin... I love coding, have time, and it would be awesome if I could make some extra
-     * bucks from it, but... I know I can't do this alone, I will for sure need help, I will make stupid mistakes. But something I can assure you
-     * is that I don't make the same mistakes twice, therefor I hope you liked my application and good luck to every applicant.
+     * Other thing I would like to point out working as a team... it's not as easy at looks but since I was young I've been taught
+     * to work in teams. I know how I should respect my team mates and keep their ideas in mind and never take credit as an individual, but as a team.
+     *
+     * Thank you for taking the time to review my application and good luck to the applicants!
      */
 }
